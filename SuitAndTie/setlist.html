@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/HeaderRules.css"> <!--Make sure to put all CSS links in the head at the top-->
+        <link rel="stylesheet" href="CSS/FooterRules.css">
+        <link rel="stylesheet" href="CSS/Animation.css">
+        <link rel="stylesheet" href="CSS/SetlistRules.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--For social media icons and hamburger button-->
+        <link rel="shortcut icon" href="Media/Images/favicon.gif"/> <!--For the favicon-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This scales for all browsers-->
+        <title>Suit & Tie</title> <!--Title in the tab-->
+    </head>
+    <body>
+        <header> <!--Header-->
+            <div class="videoWrapperWrapper"> <!--Delays the display to allow the video to load-->
+                <div class="videoWrapper"> <!--Positions and scales the video-->
+                    <!--Contains and programs the YouTube embed link-->
+                    <iframe id="bannerVid"
+                    src="https://www.youtube.com/embed/Dfu3jwiQ7hk?version=3&modestbranding=1&showinfo=0&loop=1&autoplay=1&controls=0&mute=1&playlist=Dfu3jwiQ7hk" frameborder="0"></iframe>
+                    <div class="videoBottomBlocker"></div> <!--Blocks the bottom of the Youtube Video, where the progress bar and logo is-->
+                    <div class="videoBottomFader"></div> <!--Fades the video at the bottom-->
+                    <div class="videoFocus"></div> <!--Applies a circular darkness gradient to focus the title inside the video-->
+                </div>  
+            </div>
+            <p > <!--All the links at the top are here-->
+                <a id="leftLink" href="index.html" class="leftLink">Suit & Tie</a> <!--The left logo is handled separately-->
+                <div class="links">
+                    <a id="standardLink" href="index.html">about</a>
+                    <a id="standardLink" href="videos.html">videos</a>
+                    <a id="standardLink" href="music.html"><s>music</s></a>
+                    <a id="standardLink" href="gallery.html"><s>gallery</s></a>
+                    <a id="onNow" href="setlist.html">setlist</a>
+                    <a id="standardLink" href="reviews.html">reviews</a>
+                    <a id="buttonLink" href="bookingEnquiries.html"><em><s>booking enquiries</s>></em></a><!--the <em></em> formats the button logo separately-->
+                </div>
+                <div id="hamburgerButton" class="fa fa-bars"></div> <!--Hamburger button-->
+                <div id="hamburgerButtonSpacer" class-></div>
+                <div id="burgerMenu" class="burgerMenu">
+                    <div id="burgerX"><em>X</em><b> </b><a id="burgerLayer" href="index.html">about</a></div>
+                    <a id="burgerLayer" href="videos.html">videos</a><br>
+                    <a id="burgerLayer" href="music.html">music</a><br>
+                    <a id="burgerLayer" href="gallery.html">gallery</a><br>
+                    <a id="onNow" href="setlist.html">setlist</a><br>
+                    <a id="burgerLayer" href="reviews.html">reviews</a><br>
+                    <a id="burgerLayer2" class="burgerBooking" href="bookingEnquiries.html">booking enquiries</a>
+                </div>
+                <div id="burgerMenuReplacementSpacer"></div>
+            </p>
+            <div class="mainTitlePosition"> <!--Positions the main title-->
+                <h1>SUIT & TIE</h1> <!--Main Title-->
+                <h2>Live events music</h2> <!--Sub-title--> 
+            </div>                               
+        </header>
+        
+        <section> <!--The Setlist Section-->
+            <div id="contentMargin"> <!--Content margin-->
+                <div id="setlistButtons" class="setlistButtons">
+                    <button id="sortBySong">Sort by Song Title</button><br>
+                    <button id="sortByArtist">Sort by Artist</button><br>
+                    <button id="sortByYearSong">Sort by Year / Song Title</button><br>
+                    <button id="sortByYearArtist">Sort by Year / Artist</button><br>
+                </div>
+                <div id="hrMargin"><hr/></div>
+                <p id="setlistContent"></p>
+                <button id="topButton" class="setlistButtons">Top</button><br>
+            </div>
+        </section>
+
+        <footer> <!--Footer-->
+            <div id="hrFooterMargin"> <!--Footer spacer for horizontal line seperator-->
+                <hr/> <!--Footer horizontal line separator-->
+            </div> 
+            <div id="footerMargin"> <!--Footer content-->
+                <div> <!--Socials links-->
+                    <a id="socials1" href="https://www.facebook.com/SuitAndTieFunctions" target="_blank" class="fa fa-facebook"></a> <!--Facebook-->
+                    <a id="socials2" href="https://www.instagram.com/suitandtieband/" target="_blank" class="fa fa-instagram"></a> <!--Instagram-->
+                    <a id="socials3" href="https://www.youtube.com/channel/UCZn-CZegHFYhwNvlKOq3lmw" target="_blank" class="fa fa-youtube"></a> <!--YouTube-->
+                    <div id="socialDistancer"></div>
+                    <a id="socials4" href="https://soundcloud.com/user-492274721/sets/suit-tie-function-band" target="_blank" class="fa fa-soundcloud"></a> <!--SoundCloud-->
+                    <a id="socials5" href="https://www.tailored-entertainment.com/pop-rock-funk-soul/suit-and-tie-band-london" target="_blank" class="fa fa-tumblr"></a><!--Tailored Entertainment-->
+                </div>
+                <div id="footerSpacer"></div> <!--Footer Spacer between socials and contact-->
+                <p id="contactInfo"><em>E: suitandtiefunctions@gmail.com</em> <span style="white-space: nowrap"><em>M: 07803 337935</em></span></p> <!--Contact info (The <span> is stopping the "M" from breaking at certain window widths-->
+                <p id="copyright">&copy2020</p> <!--Copyright symbol and date-->
+            </div>
+        </footer>
+        <script src="JS/HamburgerMenu.js"></script> <!--Put the JavaScript links at the bottom-->
+        <script src="JS/ScrolledToBottom.js"></script>
+        <script src="JS/RefreshScrollToTop.js"></script>
+        <script src="JS/SetlistOrganiser.js"></script>
+        <script src="JS/SetlistSorterHover.js"></script>
+    </body>
+</html>
